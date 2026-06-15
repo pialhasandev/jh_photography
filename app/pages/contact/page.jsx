@@ -36,11 +36,13 @@ export default function Page() {
   };
 
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-gray-300 py-10">
+    <div className="bg-white pt-35 text-black dark:bg-black dark:text-gray-300 py-10">
       <Container>
-        <h2 className="text-4xl md:text-5xl text-center mb-10">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-5xl text-[#fbb01a] border-b-2 inline-block  ">
           Contact Us
         </h2>
+        </div>
 
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left Side */}

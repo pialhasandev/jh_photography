@@ -22,6 +22,8 @@ const ImgCard = ({
   ttltxtTwo,
   className,
   btntxt,
+  linkOne,
+  linkTwo,
 }) => {
   return (
     <div
@@ -46,13 +48,13 @@ const ImgCard = ({
 
           <p className="text-sm md:text-lg px-10 leading-relaxed">{desTxt}</p>
         </div>
-        <Link href={"/pages/package"}>
-          <div
+        <Link href={`${linkOne}`}>
+          <button
             className={`py-4 mb-5 px-12 border cursor-pointer inline-block bg-black text-white dark:bg-white dark:text-black hover:bg-white hover:text-black
   dark:hover:bg-black dark:hover:text-white font-medium ${inter.className} duration-300 rounded-lg ${className}`}
           >
             {btntxt}
-          </div>
+          </button>
         </Link>
       </div>
 
@@ -77,14 +79,14 @@ const ImgCard = ({
             {desTxtTwo}
           </p>
         </div>
-        <Link href={"/pages/package"}>
-          <div
-            className={`py-4 mb-5 px-12 border cursor-pointer inline-block bg-black text-white dark:bg-white dark:text-black hover:bg-white hover:text-black
-  dark:hover:bg-black dark:hover:text-white font-medium ${inter.className} duration-300 rounded-lg ${className}`}
-          >
-            {btntxt}
-          </div>
-        </Link>
+        <Link href={`${linkTwo}`}>
+  <button
+    className={`py-4 mb-5 px-12 border cursor-pointer inline-block bg-black text-white dark:bg-white dark:text-black hover:bg-white hover:text-black
+    dark:hover:bg-black dark:hover:text-white font-medium ${inter.className} duration-300 rounded-lg ${className}`}
+  >
+    {btntxt}
+  </button>
+</Link>
       </div>
     </div>
   );
