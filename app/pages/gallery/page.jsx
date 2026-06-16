@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 const page = () => {
-  return <div className="bg-white text-black dark:bg-black dark:text-gray-300 pt-32">
+  return <div className="bg-white text-black dark:bg-black pb-10 dark:text-gray-300 pt-32">
     <Container>
       <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl pb-1 text-[#fbb01a] border-b-2 inline-block  ">

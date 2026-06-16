@@ -12,7 +12,7 @@ const page = () => {
        </div>
         <div className="py-5">
           <ImgCard
-            src={"/wedding.jpg"}
+            src={"/wedi.jpg"}
             srcTwo={"/birth.jpg"}
             ttltxt={"Wedding Photogarphy"}
             ttltxtTwo={"Birthday Photogarphy"}
@@ -40,7 +40,7 @@ const page = () => {
         <div className="py-5">
           <ImgCard
             src={"/studio.jpg"}
-            srcTwo={"/outdoor.jpg"}
+            srcTwo={"/outi.jpg"}
             ttltxt={"Studio Photogarphy"}
             ttltxtTwo={"Outdoor Photogarphy"}
             desTxt={"When was the last time you were professionally photographed and got pictures that you loved"}

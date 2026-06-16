@@ -16,6 +16,15 @@ import { MdCameraAlt } from "react-icons/md";
 
 import { Inter } from "next/font/google";
 import ClientImg from "../common/ClientImg";
+import Link from "next/link";
+import Button from "../common/Button";
+
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 
 const inter = Inter({
   subsets: ["latin"],
@@ -157,31 +166,27 @@ export default function Banner() {
             >
               CLIENT'S MEMORIES
             </h2>
-            
           </div>
           <div className="py-7">
-            <ClientImg
-            src={"/cl6.jpg"}
-            srcTwo={"/cl1.jpg"}
-            />
+            <ClientImg src={"/cl6.jpg"} srcTwo={"/cl1.jpg"} />
           </div>
           <div className="py-7">
-            <ClientImg
-            src={"/cl3.jpg"}
-            srcTwo={"/cl4.jpg"}
-            />
+            <ClientImg src={"/cl3.jpg"} srcTwo={"/cl4.jpg"} />
           </div>
           <div className="py-7">
-            <ClientImg
-            src={"/cl5.jpg"}
-            srcTwo={"/cl7.jpg"}
-            />
+            <ClientImg src={"/cl5.jpg"} srcTwo={"/cl7.jpg"} />
           </div>
-          <div className="py-7">
-            <ClientImg
-            src={"/cl8.jpg"}
-            srcTwo={"/cl2.jpg"}
-            />
+          <div className=" text-center">
+            <h5
+              className={`text-center pt-9 pb-5 font-semibold text-3xl ${playfair.className}`}
+            >
+              Do You Want Your{" "}
+              <span className="text-[#fbb01a]">BEST MOMEMTS</span> To Be{" "}
+              <span className="text-[#fbb01a]">REMEMBERED?</span>
+            </h5>
+            <Link href="/pages/contact" onClick={() => setOpen(false)}>
+              <Button className={"px-15 text-2xl"} btntxt="Contact Us" />
+            </Link>
           </div>
         </Container>
       </section>

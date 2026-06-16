@@ -13,7 +13,7 @@ const inter = Inter({
 const ServiceShort = () => {
   const services = [
     {
-      image: "/service1.jpg",
+      image: "/wedi.jpg",
       title: "Wedding Photography",
     },
     {

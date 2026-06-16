@@ -87,7 +87,10 @@ const page = () => {
                 Rahima Plaza 2nd Floor,
               </h5>
               <p className="pt-1 text-sm sm:text-base">
-                Tomaltola, Jamalpur Sadar
+                Tomaltola, Jamalpur Sadar,
+              </p>
+              <p className="pt-1 text-sm sm:text-base">
+                Mymensingh,Bangladesh.
               </p>
             </div>
           </div>

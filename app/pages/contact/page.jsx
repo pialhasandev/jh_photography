@@ -59,9 +59,9 @@ export default function Page() {
             </p>
 
             <PhotoProvider>
-              <PhotoView src="/service4.jpg">
+              <PhotoView src="/cont.jpg">
                 <Image
-                  src="/service4.jpg"
+                  src="/cont.jpg"
                   width={500}
                   height={300}
                   alt="Project"
