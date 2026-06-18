@@ -47,16 +47,25 @@ export default function Page() {
         <div className="flex flex-col lg:flex-row gap-10">
           {/* Left Side */}
           <div className="flex-1">
-            <h5 className="py-5 text-center font-semibold">
+           <div>
+             <h5 className="pb-2 text-2xl text-center font-semibold">
               STAY CONNECTED
             </h5>
 
-            <p className={`text-lg pb-5 ${inter.className}`}>
+            <p className={`text-lg  ${inter.className}`}>
               As a dedicated professional wedding photographer, JH Photography
               is committed to capturing and preserving your most cherished
               moments. Get in touch to discuss your vision and create a
               customized photography package tailored to your special day.
-            </p>
+            </p><div className={`pb-5 pt-2 font-bold text-2xl  ${inter.className}`}>
+              <h4 className="pb-1">
+                Business Email : <span>jhphotographybd@gmail.com</span>
+              </h4>
+              <p>
+                Phone: <span>+8801318424303</span>
+              </p>
+            </div>
+           </div>
 
             <PhotoProvider>
               <PhotoView src="/cont.jpg">
@@ -73,7 +82,7 @@ export default function Page() {
 
           {/* Right Side */}
           <div className="flex-1">
-            <h3 className="text-2xl md:text-4xl mb-8">
+            <h3 className="text-2xl md:text-4xl pt-9 mb-8">
               Whether you have a question or are planning a project, we would be
               delighted to help bring your vision to life.
             </h3>
@@ -236,6 +245,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+        
       </Container>
     </div>
   );

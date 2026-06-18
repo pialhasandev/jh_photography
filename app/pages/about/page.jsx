@@ -12,9 +12,7 @@ const page = () => {
   return (
     <div className="bg-white pt-30 text-black dark:bg-black dark:text-gray-300">
       <Container>
-        <p className="text-center pt-8 text-sm sm:text-base">
-          JH PHOTOGRAPHY
-        </p>
+        <p className="text-center pt-8 text-sm sm:text-base">JH PHOTOGRAPHY</p>
 
         <h3
           className={`text-3xl sm:text-4xl md:text-5xl py-3 text-center ${inter.className}`}
@@ -55,6 +53,14 @@ const page = () => {
               and learn more about how I can help you cherish your story
               forever.
             </h5>
+            <div className={`py-5 font-bold text-2xl ${inter.className}`}>
+              <h4 className="pb-1">
+                Business Email : <span>jhphotographybd@gmail.com</span>
+              </h4>
+              <p>
+                Phone: <span>+8801318424303</span>
+              </p>
+            </div>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2">
@@ -78,14 +84,10 @@ const page = () => {
           <div
             className={`border-2 border-amber-700 rounded-2xl py-5 px-5 sm:px-7 w-full md:w-fit ${inter.className}`}
           >
-            <h6 className="text-base sm:text-lg">
-              Shop Name: Jh Photography
-            </h6>
+            <h6 className="text-base sm:text-lg">Shop Name: Jh Photography</h6>
 
             <div className="py-1">
-              <h5 className="text-base sm:text-lg">
-                Rahima Plaza 2nd Floor,
-              </h5>
+              <h5 className="text-base sm:text-lg">Rahima Plaza 2nd Floor,</h5>
               <p className="pt-1 text-sm sm:text-base">
                 Tomaltola, Jamalpur Sadar,
               </p>

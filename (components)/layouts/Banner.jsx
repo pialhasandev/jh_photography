@@ -14,12 +14,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { MdCameraAlt } from "react-icons/md";
 
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
+
 import ClientImg from "../common/ClientImg";
 import Link from "next/link";
 import Button from "../common/Button";
-
-import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -59,7 +58,7 @@ export default function Banner() {
         <Slider {...settings}>
           {banners.map((banner, index) => (
             <div key={index}>
-              <div className="relative   w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[760px]">
+              <div className="relative w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[760px]">
                 <Image
                   src={banner}
                   alt={`Banner ${index + 1}`}
@@ -118,10 +117,10 @@ export default function Banner() {
           <div className="flex flex-col items-center select-none">
             <div className="flex items-center justify-center">
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 flex items-center justify-center">
-                <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-current rounded-tl-sm opacity-80" />
-                <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-current rounded-tr-sm opacity-80" />
-                <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-current rounded-bl-sm opacity-80" />
-                <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-current rounded-br-sm opacity-80" />
+                <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-current opacity-80" />
+                <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-current opacity-80" />
+                <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-current opacity-80" />
+                <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-current opacity-80" />
 
                 <span className="font-serif italic text-3xl sm:text-4xl md:text-6xl font-light">
                   JH
@@ -151,41 +150,38 @@ export default function Banner() {
           >
             JH Photography was founded by Zahid Hasan, a passionate photographer
             dedicated to capturing genuine emotions and timeless memories.
-            Through creativity, attention to detail, and a love for
-            storytelling, JH Photography transforms life's special moments into
-            lasting visual stories.
           </p>
 
           <h3 className="text-lg sm:text-xl md:text-3xl font-bold text-center mt-6">
             Founder & Chief Photographer: Zahid Hasan
           </h3>
 
+          {/* CLIENT MEMORIES */}
           <div className="text-center">
             <h2
-              className={`text-[#fbb01a] text-2xl  sm:text-3xl md:text-5xl font-semibold pb-2 inline-block border-b-2 pt-8 md:pt-10 ${inter.className}`}
+              className={`text-[#fbb01a] text-2xl sm:text-3xl md:text-5xl font-semibold pb-2 inline-block border-b-2 pt-8 md:pt-10 ${inter.className}`}
             >
               CLIENT'S MEMORIES
             </h2>
           </div>
+
+          {/* FIXED: correct prop usage */}
           <div className="py-7">
-            <ClientImg src={"/cl6.jpg"} srcTwo={"/cl1.jpg"} />
+            <ClientImg images={["/cl6.jpg","/cl5.jpg", "/cl7.jpg", "/cl1.jpg","/cl3.jpg", "/cl4.jpg",]} />
           </div>
-          <div className="py-7">
-            <ClientImg src={"/cl3.jpg"} srcTwo={"/cl4.jpg"} />
-          </div>
-          <div className="py-7">
-            <ClientImg src={"/cl5.jpg"} srcTwo={"/cl7.jpg"} />
-          </div>
-          <div className=" text-center">
+
+          {/* CTA */}
+          <div className="text-center">
             <h5
-              className={`text-center pt-9 pb-5 font-semibold text-3xl ${playfair.className}`}
+              className={`pt-9 pb-5 font-semibold text-3xl ${playfair.className}`}
             >
               Do You Want Your{" "}
-              <span className="text-[#fbb01a]">BEST MOMEMTS</span> To Be{" "}
+              <span className="text-[#fbb01a]">BEST MOMENTS</span> To Be{" "}
               <span className="text-[#fbb01a]">REMEMBERED?</span>
             </h5>
-            <Link href="/pages/contact" onClick={() => setOpen(false)}>
-              <Button className={"px-15 text-2xl"} btntxt="Contact Us" />
+
+            <Link href="/pages/contact">
+              <Button className="px-15 text-2xl" btntxt="Contact Us" />
             </Link>
           </div>
         </Container>

@@ -4,6 +4,7 @@ import Container from "@/(components)/common/Container";
 import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -98,6 +99,24 @@ const page = () => {
             />
           </Link>
         </div>
+        <div className=" text-center">
+                  <h5
+                    className={`text-center pt-9 pb-5  font-semibold text-3xl ${playfair.className}`}
+                  >
+                    For More Album Photos, Visit
+                  </h5>
+                  <div className="text-white border-2 border-amber-600 rounded-xl bg-black py-3 px-15 dark:bg-white inline-block dark:text-black">
+                    <div className=" items-center ">
+                    <a className="hover:text-[#fbb01a] duration-500 "
+                    href="https://www.facebook.com/jhphotographybd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaFacebookSquare  size={50}/>
+                  </a>
+                  </div>
+                  </div>
+                </div>
         <div className=" text-center">
           <h5
             className={`text-center pt-9 pb-5 font-semibold text-3xl ${playfair.className}`}
