@@ -19,7 +19,7 @@ const page = () => {
       <Container>
         <div className="text-center">
           <h3 className="text-[#fbb01a] text-2xl sm:text-3xl md:text-5xl font-semibold inline-block border-b-2 pb-2 mb-10">
-            Featured Client Vedios
+            Featured Client Videos
           </h3>
         </div>
 

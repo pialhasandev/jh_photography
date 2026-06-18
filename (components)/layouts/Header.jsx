@@ -27,7 +27,7 @@ const Header = () => {
     { name: "Gallery", path: "/pages/gallery" },
     { name: "Album", path: "/pages/album" },
     { name: "Packages", path: "/pages/package" },
-    { name: "Videos", path: "/pages/vedio" },
+    { name: "Videos", path: "/pages/video" },
   ];
 
   return (

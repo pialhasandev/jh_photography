@@ -8,17 +8,17 @@ import "react-photo-view/dist/react-photo-view.css";
 import { FaShareFromSquare } from "react-icons/fa6";
 
 const ClientImg = ({ images }) => {
-  const handleDownload = async (url) => {
-    const response = await fetch(url);
-    const blob = await response.blob();
+  // const handleDownload = async (url) => {
+  //   const response = await fetch(url);
+  //   const blob = await response.blob();
 
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = "photo.jpg";
-    link.click();
+  //   const link = document.createElement("a");
+  //   link.href = URL.createObjectURL(blob);
+  //   link.download = "photo.jpg";
+  //   link.click();
 
-    URL.revokeObjectURL(link.href);
-  };
+  //   URL.revokeObjectURL(link.href);
+  // };
 
   const handleShare = async (url) => {
     if (navigator.share) {
@@ -40,12 +40,12 @@ const ClientImg = ({ images }) => {
 
           return (
             <div className="flex items-center gap-3 mr-4">
-              <button
+              {/* <button
                 onClick={() => handleDownload(currentImage)}
                 className="text-white"
               >
                 <MdDownload className="cursor-pointer" size={24} />
-              </button>
+              </button> */}
 
               <button
                 onClick={() => handleShare(currentImage)}

@@ -10,10 +10,11 @@
   "dependencies": {
     "@deemlol/next-icons": "^0.2.7",
     "@emailjs/browser": "^4.4.1",
-    "next": "16.2.7",
+    "next": "^16.2.9",
     "next-themes": "^0.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^5.6.0",
     "react-phone-input-2": "^2.15.1",
     "react-photo-view": "^1.2.7",
