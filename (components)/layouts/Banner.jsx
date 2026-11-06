@@ -34,7 +34,7 @@ export default function Banner() {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1600,
+    autoplaySpeed: 3000,
     speed: 700,
     pauseOnHover: false,
     slidesToShow: 1,
@@ -58,7 +58,7 @@ export default function Banner() {
         <Slider {...settings}>
           {banners.map((banner, index) => (
             <div key={index}>
-              <div className="relative w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[760px]">
+              <div className="relative w-full h-[220px] sm:h-[350px] md:h-[450px] lg:h-[540px] xl:h-[620px] 2xl:h-[720px]">
                 <Image
                   src={banner}
                   alt={`Banner ${index + 1}`}
