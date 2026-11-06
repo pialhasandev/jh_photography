@@ -17,12 +17,12 @@ const Footer = () => {
       <Container>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 px-4 text-center lg:text-left">
           {/* Copyright */}
-          <h5 className="text-xs sm:text-sm md:text-base uppercase leading-relaxed">
+          <h5 className="text-xs sm:text-sm md:text-base uppercase leading-relaxed lg:flex-1">
             © Copyright 2026 JH Photography - All Rights Reserved.
           </h5>
 
           {/* Social Links */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 lg:flex-1">
             <span className="text-sm md:text-base uppercase font-medium">
               Find Me On:
             </span>
@@ -65,6 +65,19 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          {/* Portfolio / Developer credit */}
+          <p className="text-xs sm:text-sm md:text-base lg:flex-1 lg:text-right">
+            Website developed by{" "}
+            <a
+              href="https://pialhasandev.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-4 hover:text-amber-600 dark:hover:text-amber-400 duration-300"
+            >
+              pialhasandev
+            </a>
+          </p>
         </div>
       </Container>
     </footer>
